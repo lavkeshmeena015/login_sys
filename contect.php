@@ -4,9 +4,6 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
     header("location: login.php");
     exit;
 }
-
-
-
 $showAlert = false;
 $showError = false;
 if($_SERVER["REQUEST_METHOD"] == "POST"){
@@ -28,14 +25,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     else{
         $showError = "Passwords do not match";
     }
-}
-    
+}    
 ?>
-
 
 <!doctype html>
 <html lang="en">
-
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -69,12 +63,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
   </style>
 
 </head>
-
 <body>
-
   <?php require 'partials/_nav.php' ?>
-
-
   <div class="my1">
 
   <?php
@@ -85,7 +75,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         }
       ?>
 
-
     <div class="container">
       <h1 class="text-center">Contact Us</h1>
       <form action="/login_sys/contect.php" method="post">
@@ -95,27 +84,19 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
         </div>
         <div class="form-group">
-          <!-- <label for="password">Password</label> -->
           <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
         </div>
         <div class="form-group">
-          <!-- <label for="password">Password</label> -->
           <input type="phone" class="form-control" id="phone" name="phone" placeholder="Enter your phone">
         </div>
         <div class="form-group">
-          <!-- <label for="password">Password</label> -->
           <textarea class="form-control" cols="30" rows="10" id="other" name="other" placeholder="Enter any other information here"> </textarea>
         </div>
         <div class="text-center">
           <button type="submit" class="btn btn-primary">Submit</button>
         </div>
-
-        
       </form>
-
     </div>
   </div>
-
 </body>
-
 </html>
