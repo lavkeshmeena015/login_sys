@@ -1,10 +1,10 @@
 
 
 <?php
-$server = "127.0.0.1";
-$username = "root";
-$password = "@i!yaKizu";
-$database = "user_1s";
+$server = "";
+$username = "";
+$password = "";
+$database = "";
 
 $conn = mysqli_connect($server, $username, $password, $database);
 if (!$conn){
