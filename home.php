@@ -44,7 +44,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
             </p>
         </p>
     </section>
-
+//all copyrights are reserved
 </body>
 
 </html>
